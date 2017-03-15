@@ -11,10 +11,8 @@ function _sumFibs( maxFibValue ) {
 
   while (maxFibValue > fibSeq[fibSeq.length - 1]) {
     fibSeq.push(fibSeq[fibSeq.length - 1] + fibSeq[fibSeq.length -2]);
-  }
-  for (var i = 0; i < fibSeq.length; i++) {
-    if (fibSeq[i] % 2 === 0) {
-      sum += fibSeq[i];
+    if (fibSeq[fibSeq.length - 1] % 2 === 0) {
+      sum += fibSeq[fibSeq.length - 1];
     }
   }
 
@@ -31,7 +29,6 @@ function _highestFibonacciNumber (maxFibValue){
   while (maxFibValue > fibSeq[fibSeq.length - 1]) {
     fibSeq.push(fibSeq[fibSeq.length - 1] + fibSeq[fibSeq.length -2]);
   }
-  console.log(fibSeq);
 
   highest = fibSeq[fibSeq.length - 2];
   //do your work here
